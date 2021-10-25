@@ -3,14 +3,14 @@
   <head>
     <title>Codear en R para RRHH</title>
     <meta charset="utf-8" />
-    <meta name="author" content="People Analytics World 2021" />
+    <meta name="author" content="People Analytics World LatAm 2021" />
     <meta name="author" content="Sergio Garcia Mora" />
     <meta name="author" content="sergio@d4hr.com" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <meta name="github-repo" content="https://github.com/chechoid/paw-latam-2021"/>
     <meta name="twitter:title" content="Codear en R para RRHH: Una breve guía para aprender a programar y vivir para contarlo"/>
     <meta name="twitter:description" content="Esta es la presentación para la conferencia People Analytics World 2021 Latam sobre consejos sobre cómo empezar a programar en R y lograr avances en el aprendizaje Desarrollada por Sergio Garcia Mora."/>
-    <meta name="twitter:url" content="http://bit.ly/paw21-es-r4hr"/>
+    <meta name="twitter:url" content="https://bit.ly/paw-la-r4hr-2021"/>
     <meta name="twitter:image" content="https://github.com/chechoid/paw21-coding-in-r-live-to-tell/blob/main/Archivos/portada.png"/>
     <meta name="twitter:image:alt" content="Codear en R para RRHH: Una breve guía para aprender a programar y vivir para contarlo Tucana&#39;s People Analytics World 2021 Latam Autor: Sergio Garcia Mora"/>
     <meta name="twitter:card" content="summary_large_image"/>
@@ -18,7 +18,7 @@
     <meta name="twitter:site" content="@data4hr"/>
     <meta property="og:title" content="Codear en R para RRHH: Una breve guía para aprender a programar y vivir para contarlo"/>
     <meta property="og:description" content="Esta es la presentación para la conferencia People Analytics World 2021 Latam sobre consejos sobre cómo empezar a programar en R y lograr avances en el aprendizaje Desarrollada por Sergio Garcia Mora."/>
-    <meta property="og:url" content="http://bit.ly/paw21-es-r4hr"/>
+    <meta property="og:url" content="https://bit.ly/paw-la-r4hr-2021"/>
     <meta property="og:image" content="https://github.com/chechoid/paw21-coding-in-r-live-to-tell/blob/main/Archivos/portada.png"/>
     <meta property="og:image:alt" content="Codear en R para RRHH: Una breve guía para aprender a programar y vivir para contarlo Tucana&#39;s People Analytics World 2021 Latam Autor: Sergio Garcia Mora"/>
     <meta property="og:type" content="website"/>
@@ -40,7 +40,7 @@ class: center, middle, inverse, title-slide
 
 # Codear en R para RRHH
 ## Una breve guía para aprender a programar <br> y vivir para contarlo
-### People Analytics World 2021
+### People Analytics World LatAm 2021
 ### Sergio Garcia Mora
 ### <a href="mailto:sergio@d4hr.com" class="email">sergio@d4hr.com</a>
 
@@ -78,6 +78,19 @@ Hoy en día, y gracias a la comunidad de desarrolladores quienes expandieron sus
 --
 
 En R podés trabajar con cualquier tipo de datos, y hacer todo tipo de análisis que se te ocurra.
+
+---
+# ¿Por qué R en RRHH?
+
+.pull-left[
+&lt;img src="https://c.tenor.com/bD9vHNiR1rQAAAAd/boom-mind-blown.gif" /&gt;
+]
+
+.pull-right[Una de las grandes ventajas de R es que permite trabajar de punta a punta en todo el ciclo de vida del dato, esto significa que podemos conectar a una base de datos, a varias hojas de cálculo, y en el mismo script hacer los procesamientos de datos, los gráficos, reportes, tableros y presentaciones por ejemplo.]
+
+
+
+
 
 ---
 class: inverse, center, middle
@@ -251,11 +264,12 @@ class: center, middle
 .right-column[
 * ### 🤓 HR Nerd
 * 💪 Licenciado en Relaciones del Trabajo con formación en Data Mining
+* 👨‍💻 Diplomado en Ciencias Sociales Computacionales de UNSAM
 * 💹 SME People Analytics at [Data IQ](https://dataiq.com.ar/)
 * 👨‍🏫 Profesor de People Analytics en ITBA
 * ✈️ Fundador de [Data 4HR](https://data-4hr.com/)
-* 🍷 Fundador del [Club de R para RRHH](https://r4hr.club)
-* 👑 Meme Manager en varias comunidades
+* 🍷 Fundador de [R4HR Club de R para RRHH](https://r4hr.club)
+* 🔨 Intructor certificado Data Carpentry por [The Carpentries](https://carpentries.org/).
 
 ]
 
@@ -292,22 +306,62 @@ En R podés:
 * Escribir libros 📖, crear blogs 💬... y mucho más
 
 ---
-## La ventaja de empezar de cero
+class: inverse, center, middle
+# Usos de R en la comunidad de RRHH
+
+---
+## Informes salariales en el ámbito privado
 
 .pull-left[
-.right[
-&lt;img src="https://m.media-amazon.com/images/I/41PZRSHF-NL.jpg" /&gt;
+&lt;img src="Archivos/flexdashboard.png" /&gt;
 ]
-]
-
 
 .pull-right[
-Peter Thiel, con su analogía de ir *de cero a uno*, señala que cuando creas algo nuevo y disruptivo, que soluciona un problema que nadie antes había pensado, te estás moviendo de cero a uno.
+Una de nuestras integrantes utilizó el paquete `flexdashboard` para crear un tablero para mostrar la composición de los salarios, aportes y contribuciones, y movimientos de personal.
 
-Si bien no vas a reinventar la rueda al usar R en tu organización, cuando crees tu primer análisis, tu primer informe, o una presentación sencilla usando R, **algo puede cambiar** en tu organización.
-
-La principal ventaja de empezar algo desde cero es que tenés mucho espacio para introducir mejoras, y cada pequeño cambio que lleves a cabo tendrá un gran impacto.
+Pudo consolidar información de diversas fuentes, adaptarla en función de las solicitudes de sus clientes internos y despertar interés en los análisis de parte de los stakeholders.
 ]
+---
+## Informes salariales en el ámbito público
+
+.pull-left[
+En el **Ministerio de Educación de la Provincia de Corrientes** utilizan R para cruzar muchas planillas de cálculo con información de todo el personal de educación de la provincia, y consolidar los informes salariales.
+
+Lo que ganaron usando R fue velocidad, menor cantidad de errores, reutilización del código y además mayor capacidad de respuesta a las nuevas inquietudes que surgieron gracias a los primeros análisis que hicieron.   
+]
+
+.pull-right[
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/p-csppcvYn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+---
+## Devolución de resultados individualizados
+
+.pull-left[
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EScgUrq1pGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+.pull-right[
+El grupo **International Cognitive Research Consortium** de Buenos Aires, realiza investigaciones con técnicas psicométricas relacionados con psicologogía cognitiva, comportamientos y educación.
+
+En una investigación realizaron una serie de test psicométricos a varias personas que se presentaron voluntariamente. Y a cada una de los participantes le realizaron un informe personalizado.
+
+Además de los resultados y análisis que realizaron internamente, utilizaron R para generar un informe personalizado para cada una de las más de 300 personas que participaron de los estudios.
+]
+
+---
+## ¿En qué lo uso yo?
+
+* Preparación de datos para cargarlos en un tablero
+* Análisis predictivos
+* Tutoriales interactivos
+* Devolución de informes de encuestas incluyendo:
+  * los análisis de resultados, gráficos y sus conclusiones.
+  * análisis estadísticos como clusters y matrices de correlaciones.
+  * text mining
+
+&lt;img src="Archivos/resultados.png" /&gt;
+
 ---
 # 4 tips para aprender a codear
 
@@ -789,7 +843,7 @@ class: inverse middle center
 # Let's connect!
 
 .pull-left[
-&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; Presentación: [bit.ly/paw21-es-r4hr](http://bit.ly/paw21-es-r4hr)
+&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; Presentación: [https://bit.ly/paw-la-r4hr-2021](https://bit.ly/paw-la-r4hr-2021)
 
 &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"&gt;&lt;/path&gt;&lt;/svg&gt; [LinkedIn](https://www.linkedin.com/in/sergiogarciamora/?locale=en_US)
 
@@ -797,7 +851,7 @@ class: inverse middle center
 
 &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"&gt;&lt;/path&gt;&lt;/svg&gt; [Telegram](https://t.me/SergioGarciaMora)
 
-&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"&gt;&lt;/path&gt;&lt;/svg&gt; [sergio@d4r.com](mailto:sergio@d4hr.com)
+&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"&gt;&lt;/path&gt;&lt;/svg&gt; [sergio.g.mora@dataiq.com.ar](mailto:sergio.g.mora@dataiq.com.ar)
 
 ]
 

@@ -46,7 +46,7 @@ meta() %>%
       "Esta es la presentación para la conferencia People Analytics World 2021 Latam sobre consejos sobre cómo empezar a programar en R y lograr avances en el aprendizaje",
       "Desarrollada por Sergio Garcia Mora."
     ),
-    url = "http://bit.ly/paw21-es-r4hr",
+    url = "https://bit.ly/paw-la-r4hr-2021",
     image = "https://github.com/chechoid/paw21-coding-in-r-live-to-tell/blob/main/Archivos/portada.png",
     image_alt = paste(
       "Codear en R para RRHH: Una breve guía para aprender a programar y vivir para contarlo", 
@@ -83,6 +83,19 @@ Hoy en día, y gracias a la comunidad de desarrolladores quienes expandieron sus
 --
 
 En R podés trabajar con cualquier tipo de datos, y hacer todo tipo de análisis que se te ocurra.
+
+---
+# ¿Por qué R en RRHH?
+
+.pull-left[
+<img src="https://c.tenor.com/bD9vHNiR1rQAAAAd/boom-mind-blown.gif" />
+]
+
+.pull-right[Una de las grandes ventajas de R es que permite trabajar de punta a punta en todo el ciclo de vida del dato, esto significa que podemos conectar a una base de datos, a varias hojas de cálculo, y en el mismo script hacer los procesamientos de datos, los gráficos, reportes, tableros y presentaciones por ejemplo.]
+
+
+
+
 
 ---
 class: inverse, center, middle
@@ -875,11 +888,12 @@ class: center, middle
 .right-column[
 * ### `r emo::ji("geek")` HR Nerd
 * `r emo::ji("biceps")` Licenciado en Relaciones del Trabajo con formación en Data Mining
+* `r emo::ji("inventor")` Diplomado en Ciencias Sociales Computacionales de UNSAM
 * `r emo::ji("chart")` SME People Analytics at [Data IQ](https://dataiq.com.ar/)
 * `r emo::ji("teacher")` Profesor de People Analytics en ITBA
 * `r emo::ji("airplane")` Fundador de [Data 4HR](https://data-4hr.com/)
-* `r emo::ji("wine")` Fundador del [Club de R para RRHH](https://r4hr.club)
-* `r emo::ji("king")` Meme Manager en varias comunidades
+* `r emo::ji("wine")` Fundador de [R4HR Club de R para RRHH](https://r4hr.club)
+* `r emo::ji("hammer")` Intructor certificado Data Carpentry por [The Carpentries](https://carpentries.org/).
 
 ]
 
@@ -916,22 +930,62 @@ En R podés:
 * Escribir libros `r emo::ji("book")`, crear blogs `r emo::ji("bubble")`... y mucho más
 
 ---
-## La ventaja de empezar de cero
+class: inverse, center, middle
+# Usos de R en la comunidad de RRHH
+
+---
+## Informes salariales en el ámbito privado
 
 .pull-left[
-.right[
-<img src="https://m.media-amazon.com/images/I/41PZRSHF-NL.jpg" />
+<img src="Archivos/flexdashboard.png" />
 ]
-]
-
 
 .pull-right[
-Peter Thiel, con su analogía de ir *de cero a uno*, señala que cuando creas algo nuevo y disruptivo, que soluciona un problema que nadie antes había pensado, te estás moviendo de cero a uno.
+Una de nuestras integrantes utilizó el paquete `flexdashboard` para crear un tablero para mostrar la composición de los salarios, aportes y contribuciones, y movimientos de personal.
 
-Si bien no vas a reinventar la rueda al usar R en tu organización, cuando crees tu primer análisis, tu primer informe, o una presentación sencilla usando R, **algo puede cambiar** en tu organización.
-
-La principal ventaja de empezar algo desde cero es que tenés mucho espacio para introducir mejoras, y cada pequeño cambio que lleves a cabo tendrá un gran impacto.
+Pudo consolidar información de diversas fuentes, adaptarla en función de las solicitudes de sus clientes internos y despertar interés en los análisis de parte de los stakeholders.
 ]
+---
+## Informes salariales en el ámbito público
+
+.pull-left[
+En el **Ministerio de Educación de la Provincia de Corrientes** utilizan R para cruzar muchas planillas de cálculo con información de todo el personal de educación de la provincia, y consolidar los informes salariales.
+
+Lo que ganaron usando R fue velocidad, menor cantidad de errores, reutilización del código y además mayor capacidad de respuesta a las nuevas inquietudes que surgieron gracias a los primeros análisis que hicieron.   
+]
+
+.pull-right[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p-csppcvYn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+## Devolución de resultados individualizados
+
+.pull-left[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EScgUrq1pGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+.pull-right[
+El grupo **International Cognitive Research Consortium** de Buenos Aires, realiza investigaciones con técnicas psicométricas relacionados con psicologogía cognitiva, comportamientos y educación.
+
+En una investigación realizaron una serie de test psicométricos a varias personas que se presentaron voluntariamente. Y a cada una de los participantes le realizaron un informe personalizado.
+
+Además de los resultados y análisis que realizaron internamente, utilizaron R para generar un informe personalizado para cada una de las más de 300 personas que participaron de los estudios.
+]
+
+---
+## ¿En qué lo uso yo?
+
+* Preparación de datos para cargarlos en un tablero
+* Análisis predictivos
+* Tutoriales interactivos
+* Devolución de informes de encuestas incluyendo:
+  * los análisis de resultados, gráficos y sus conclusiones.
+  * análisis estadísticos como clusters y matrices de correlaciones.
+  * text mining
+
+<img src="Archivos/resultados.png" />
+
 ---
 # 4 tips para aprender a codear
 
@@ -1360,7 +1414,7 @@ class: inverse middle center
 # Let's connect!
 
 .pull-left[
-`r icons::fontawesome("link")` Presentación: [bit.ly/paw21-es-r4hr](http://bit.ly/paw21-es-r4hr)
+`r icons::fontawesome("link")` Presentación: [https://bit.ly/paw-la-r4hr-2021](https://bit.ly/paw-la-r4hr-2021)
 
 `r icons::fontawesome("linkedin")` [LinkedIn](https://www.linkedin.com/in/sergiogarciamora/?locale=en_US)
 
@@ -1368,7 +1422,7 @@ class: inverse middle center
 
 `r icons::fontawesome("paper-plane")` [Telegram](https://t.me/SergioGarciaMora)
 
-`r icons::fontawesome("envelope")` [sergio@d4r.com](mailto:sergio@d4hr.com)
+`r icons::fontawesome("envelope")` [sergio.g.mora@dataiq.com.ar](mailto:sergio.g.mora@dataiq.com.ar)
 
 ]
 
