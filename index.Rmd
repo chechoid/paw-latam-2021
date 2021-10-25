@@ -4,7 +4,7 @@ subtitle: "Una breve guía para aprender a programar <br> y vivir para contarlo"
 author: 
   - "People Analytics World LatAm 2021"
   - "Sergio Garcia Mora"
-  - "sergio@d4hr.com"
+  - "sergio.g.mora@dataiq.com.ar"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(
-  primary_color = "#c3e89b",
+  primary_color = "#629e21",
   secondary_color = "#0256B6",
   inverse_header_color = "#FFFFFF",
   header_font_google = google_font("Nunito", "400"),
@@ -440,7 +440,6 @@ eho_text_nrc %>%
 
 .pull-right[
 ```{r tm2, echo=FALSE, out.width="75%"}
-library(wordcloud2)
 library(webshot)
 
 eho_text_vacio %>%
@@ -1133,6 +1132,24 @@ ggplot(d1) +
 ```
 
 ---
+## Clones
+
+.pull-left[
+Un día estaba explicando el método de clustering **de vecinos más cercanos** o **k-nn** por su nombre en inglés y usé este dibujo hecho en 
+
+.center[<img src="clones/knn.jpg" width="40%" />]
+
+Y después de hacerlo pensé *"esto lo podría hacer con datos"*.
+
+Y salió esto
+]
+
+--
+
+.pull-right[
+<img src="clones/clones.png" />
+]
+---
 .left-column[
 
 ### Haz proyectos divertidos
@@ -1151,7 +1168,7 @@ Algo **impresionante** de R son los Grupos de Usuarios de R (RUG por sus siglas 
 
 Hay decenas de RUGs y de grupos de R-Ladies que organizan talleres, brindan apoyo (con frecuencia más allá de R), escriben libros y los comparten de manera abierta y gratuita. Traducen cheatsheets, se preocupan por ser inclusivos, organizan meetups y conferencias, comparten contenido, y lo más importante, te hacen saber que no estás solo o sola en este viaje.
 
-En la misma línea hemos creado para los profesionales de RRHH de habla hispana nuestra propia comunidad: el **[Club de R para RRHH](https://linktr.ee/r4hrclub)**.
+En la misma línea hemos creado para los profesionales de RRHH de habla hispana nuestra propia comunidad:  **[R4HR Club de R para RRHH](https://linktr.ee/r4hrclub)**.
 
 También puedes encontrar recursos gratuitos dirigidos a los profesionales de People Analytics y RRHH, por ejemplo los libros (en inglés)  de [Hendrik Feddersen](https://www.linkedin.com/in/hendrikfeddersen/)'s *["HR Analytics in R"](https://hranalyticslive.netlify.app/index.html)*, y el de [Keith McNulty](https://www.linkedin.com/in/keith-mcnulty/)'s *["Handbook of Regression Modeling in People Analytics"](http://peopleanalytics-regression-book.org/)*. 
 
