@@ -2,7 +2,7 @@
 title: "Codear en R para RRHH"
 subtitle: "Una breve guía para aprender a programar <br> y vivir para contarlo"
 author: 
-  - "People Analytics World 2021"
+  - "People Analytics World LatAm 2021"
   - "Sergio Garcia Mora"
   - "sergio@d4hr.com"
 output:
@@ -334,7 +334,7 @@ library(reshape2)
 library(googlesheets4)
 library(gargle)
 
-EncuestaHomeOffice <- sheets_read("1g2q3c_MMrBc4MehO4Yjktpu2fk7s7M8Bn2wIgV6yQHo")
+EncuestaHomeOffice <- read_sheet("1g2q3c_MMrBc4MehO4Yjktpu2fk7s7M8Bn2wIgV6yQHo")
 
 
 EncuestaHomeOffice <- EncuestaHomeOffice %>% 
