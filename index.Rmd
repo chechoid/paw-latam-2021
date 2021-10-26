@@ -1310,7 +1310,8 @@ training_ratings <- read_delim("data/training_ratings.csv", delim = ";")
 (training_analysis <- training_ratings %>% 
     mutate(pseudo_supplier = pseudonymize(supplier)) %>% 
     group_by(pseudo_supplier) %>% 
-    summarise(alignment = mean(area_goals_alignment))) 
+    summarise(alignment = mean(area_goals_alignment))) %>% 
+  arrange(-alignment)
   
 ```
 ]
@@ -1440,6 +1441,8 @@ class: inverse middle center
 `r icons::fontawesome("paper-plane")` [Telegram](https://t.me/SergioGarciaMora)
 
 `r icons::fontawesome("envelope")` [sergio.g.mora@dataiq.com.ar](mailto:sergio.g.mora@dataiq.com.ar)
+
+`r icons::fontawesome("github")` [Repositorio de la presentación](https://github.com/chechoid/paw-latam-2021)
 
 ]
 
