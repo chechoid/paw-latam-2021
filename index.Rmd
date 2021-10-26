@@ -47,7 +47,7 @@ meta() %>%
       "Desarrollada por Sergio Garcia Mora."
     ),
     url = "https://bit.ly/paw-la-r4hr-2021",
-    image = "https://github.com/chechoid/paw21-coding-in-r-live-to-tell/blob/main/Archivos/portada.png",
+    image = "https://raw.githubusercontent.com/chechoid/paw-latam-2021/main/Archivos/portada.png",
     image_alt = paste(
       "Codear en R para RRHH: Una breve guía para aprender a programar y vivir para contarlo", 
       "Tucana's People Analytics World 2021 Latam", 
