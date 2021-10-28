@@ -25,7 +25,7 @@ Todo el contenido de esta presentación puede ser reutilizado de manera abierta 
 
 Para contactarse conmigo me pueden escribir a [sergio@d4hr.com](mailto:sergio@d4hr.com) o por redes sociales en:
 
-<i class="fab fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/sergiogarciamora/)
+💼 [LinkedIn](https://www.linkedin.com/in/sergiogarciamora/)
 
-<i class="fab fa-twitter-square"></i> [Twitter](https://twitter.com/sergiogarciamor)
+🐦[Twitter](https://twitter.com/sergiogarciamor)
 
