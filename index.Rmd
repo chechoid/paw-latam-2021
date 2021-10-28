@@ -1468,7 +1468,7 @@ Quiero agradecer a:
 
 `r emo::ji("100")` Barry Swales y a todos en Tucana por organizar un evento tan increíble.
 
-`r emo::ji("gold")` Marta Gascón Corella por su generosidad y pensar en mí para ser parte del #PAWorld2021.
+`r emo::ji("gold")` Marta Gascón Corella por su generosidad y pensar en mí para ser parte del #PAWorld2021 y a Federico Barcos por la organización.
 
 `r emo::ji("cheers")` La INCREIBLE comunidad de R de Latinoamérica y de todo el mundo.
 
